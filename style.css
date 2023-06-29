@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.image-slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+.image-slider__images {
+    display: flex;
+    overflow: hidden;
+    width: 90vw;
+    max-width: 1000px;
+    aspect-ratio: 16/9;
+    margin: 1em auto;
+    scroll-behavior: smooth;
+}
+
+.image-slider__image {
+    min-width: 100%;
+    object-fit: cover;
+}
+
+.image-slider__buttons {
+    display: flex;
+    margin: auto;
+    gap: 0.8em;
+}
+
+.image-slider__radio {
+    appearance: none;
+    width: 1.8em;
+    aspect-ratio: 1;
+    background-color: lightgray;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.image-slider__radio:checked {
+    background-color: gray;
+}
+
