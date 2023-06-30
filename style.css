@@ -29,12 +29,6 @@
     object-fit: cover;
 }
 
-.image-slider__dots {
-    display: flex;
-    margin: auto;
-    gap: 0.8em;
-}
-
 .image-slider__button {
     appearance: none;
     border: none;
@@ -42,11 +36,12 @@
     cursor: pointer;
     font-size: 6em;
     font-weight: bold;
-    color: gray;
+    color: lightgray;
     transition: all 0.2s ease-in-out;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
 .image-slider__button:hover {
@@ -55,6 +50,7 @@
 
 .image-slider__button:active {
     filter: brightness(1.2);
+    top: 50.5%;
 }
 
 .image-slider__button--left {
@@ -73,6 +69,14 @@
     right: 2%;
 }
 
+.image-slider__dots {
+    display: flex;
+    margin: auto;
+    gap: 0.8em;
+    position: absolute;
+    bottom: 5%;
+}
+
 .image-slider__dot {
     appearance: none;
     width: 1.8em;
@@ -81,6 +85,7 @@
     border-radius: 100%;
     cursor: pointer;
     transition: background-color 0.5s ease-in-out;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
 .image-slider__dot:checked {
