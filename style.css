@@ -17,8 +17,7 @@
 .image-slider__images {
     display: flex;
     overflow: hidden;
-    width: 90vw;
-    max-width: 1000px;
+    width: 100vw;
     aspect-ratio: 16/9;
     margin: 1em auto;
     scroll-behavior: smooth;
